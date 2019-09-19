@@ -1,4 +1,31 @@
-.fas {
-    width: 50px;
-    
+.die {
+  margin: 100px 20px 20px 20px ;
+  font-size: 150px;
+  color:rgb(30, 93, 165);
   }
+  .shaking{
+    animation-name: rolling;
+    animation-duration: 1s ;
+  }
+  button{
+    width: 7em;
+    border-radius: 10px;
+    border: 0px; 
+    font-size: 30px;
+    font-weight: bold ;
+    padding: 10px;
+    margin: 20px;
+  }
+  button:hover{
+    background-color: rgb(214, 175, 199);
+    cursor: pointer;
+  }
+  @keyframes rolling {
+from{transform: translate3d(0 ,0 ,0);}
+15%{transform: translate3d(-25%,0,0) rotate3d(0,0,1,-5deg) ; color:rgb(61, 109, 165)}
+30%{transform: translate3d(20%,0,0) rotate3d(0,0,1,3deg);color:rgb(197, 221, 248)}
+45%{transform: translate3d(-15%,0,0) rotate3d(0,0,1,-3deg)}
+60%{transform: translate3d(10% ,0,0) rotate3d(0,0,1,2deg)}
+75%{transform: translate3d(-5% ,0,0) rotate3d(0,0,1,-1deg)}
+to{transform: translate3d(0,0,0)}
+}
