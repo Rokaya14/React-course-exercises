@@ -1,0 +1,29 @@
+.Ball{
+    background-color: rgb(42, 165, 124) ;
+    color: white;
+    border-radius: 50% ;
+    width: 3em;
+    height: 2.25em;
+    padding-top: 0.75em ;
+    text-align: center;
+    margin: 1.5em .5em ;
+    font-size: 1.5em ;
+    font-weight: bold;
+    display: inline-block ;
+}
+.lottery{
+    background-color: rgb(250, 244, 235);
+    border: solid 2.5px gray;
+    border-radius: 15px ;
+    margin: 10px auto ;
+    width:  500px;
+    text-align: center;
+    padding: 1em 2em 
+}
+.lottery button{
+    background-color: rgb(5, 5, 116);
+    font-size: 120%;
+    border-radius: 10px;
+    color: white;  
+    padding: .4em 1em  
+}
