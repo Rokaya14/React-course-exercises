@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {randomWord} from './words'
+import { randomWord } from './words'
 import "./Hangman.css";
 import img0 from "./0.jpg";
 import img1 from "./1.jpg";
@@ -19,7 +19,7 @@ class Hangman extends Component {
   constructor(props) {
     super(props);
     this.state = { nWrong: 0, guessed: new Set(), answer: randomWord() };
-    this.handleGuess = this.handleGuess.bind(this); 
+    this.handleGuess = this.handleGuess.bind(this);
     this.reset = this.reset.bind(this);
   }
 
@@ -58,31 +58,30 @@ class Hangman extends Component {
       </button>
     ));
   }
-/* reset the game if you want  */
-  reset(){
+  /* reset the game if you want  */
+  reset() {
     this.setState(
-      {nWrong: 0, guessed: new Set(), answer: randomWord() }
+      { nWrong: 0, guessed: new Set(), answer: randomWord() }
     );
   }
   /** render: render game */
   render() {
     // if you wrong >=6 ...game over will be true !
-    let gameOver = this.state.nWrong >= this.props.maxWrong 
+    let gameOver = this.state.nWrong >= this.props.maxWrong
     const altLetter = `${this.state.nWrong}/${this.props.maxWrong} guesses`
-    
     return (
       <div className='Hangman'>
         <h1>Hangman</h1>
         <img src={this.props.images[this.state.nWrong]} alt={altLetter} />
         <p>Guessed Wrong :{this.state.nWrong}</p>
         <p className='Hangman-word'>{gameOver ? this.state.answer : this.guessedWord()}</p>
-        
-        { this.guessedWord().join("") === this.state.answer
-         ?<p className="winner"> Congratulation ! !</p>
-         :<p className='Hangman-btns'>
-             { gameOver ? 
-            `You lose  !  👻`
-            : this.generateButtons()}
+
+        {this.guessedWord().join("") === this.state.answer
+          ? <p className="winner"> Congratulation You Win ! !</p>
+          : <p className='Hangman-btns'>
+            {gameOver ?
+              `You lose  !  👻`
+              : this.generateButtons()}
           </p>}
         <button className="restartButten" onClick={this.reset}>Restart</button>
       </div>

@@ -4,12 +4,13 @@ import React,{Component} from 'react';
 import './App.css';
 //import Diegame from './diecgame/diceGame';
 //import Lottery from './ballgame/lottery';
-import Numlist from './ChangeNumber/Numlist'
+//import Numlist from './ChangeNumber/Numlist'
+import Board from './lightGame/board'
 class App extends Component {
   render(){
   return(
     <div className="App">
-    <Numlist/>
+    <Board/>
     </div> 
   );
 }} 
