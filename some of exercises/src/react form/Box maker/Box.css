@@ -1,0 +1,31 @@
+button{
+    background-color: burlywood ;
+    margin:2em  0em 0em 0em ;
+    padding :.5em ;
+    border: .2em solid rgb(114, 88, 54)
+}
+form{
+    width: 600px;
+    margin: 2em auto ;
+    padding: 1em ;
+    border: .2em solid rgb(189, 145, 87)
+}
+input{
+    margin: .5em .5em ; 
+    width :10em ;
+    border: .1em solid rgb(197, 184, 167) 
+
+}
+label{
+    color: brown;
+    font-weight: bold
+}
+.box{
+    margin: 2em auto
+}
+.container{
+    border: .1em solid rgb(197, 184, 167) ;
+    width: 600px;
+    margin:2em auto;
+
+}

@@ -5,12 +5,14 @@ import './App.css';
 //import Diegame from './diecgame/diceGame';
 //import Lottery from './ballgame/lottery';
 //import Numlist from './ChangeNumber/Numlist'
-import Board from './lightGame/board'
+//import Board from './lightGame/board'
+import Box from './react form/Box maker/BoxesList'
+import Boxlist from './react form/Box maker/BoxesList';
 class App extends Component {
   render(){
   return(
     <div className="App">
-    <Board/>
+    <Boxlist/>
     </div> 
   );
 }} 
